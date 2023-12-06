@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import React, { useRef, useState, useEffect } from "react";
