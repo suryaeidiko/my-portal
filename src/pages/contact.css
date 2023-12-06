@@ -1,0 +1,30 @@
+.contact {
+  border: 2px solid white;
+  background-color: white;
+  padding: 15px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-parent-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+  }
+  
+.container {
+    max-width: 140rem;
+    /* padding: 3rem 1rem; */
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 6.4;
+  }
+  
+  .grid-two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
