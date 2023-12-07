@@ -108,10 +108,9 @@ const Navbar = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundImage:
-      "url(https://images.unsplash.com/photo-1485841890310-6a055c88698a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-    paddingTop: "64px",
-    marginTop: "-64px", // Adjusted margin to remove the blank space
+    backgroundImage: "url(https://images.unsplash.com/photo-1485841890310-6a055c88698a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+    paddingTop: "32px", // Adjusted padding for better spacing
+    marginTop: "-64px",
   };
 
   const section1StylesAbout = {
@@ -143,13 +142,23 @@ const Navbar = () => {
     marginTop: "-200px", // Adjusted margin to remove the blank space
   };
 
-  const contentStyles = {
-    marginTop: "-15rem",
-    width: "100%",
-    textAlign: "center",
-    padding: "20px",
-    color: "black", // Adding text color for better visibility against the background image
-  };
+  // const contentStyles = {
+  //   marginTop: "-15rem",
+  //   width: "100%",
+  //   textAlign: "center",
+  //   padding: "20px",
+  //   color: "black", // Adding text color for better visibility against the background image
+  // };
+  // Update contentStyles for better readability on smaller screens
+const contentStyles = {
+  marginTop: "-10rem", // Adjust the margin for better spacing
+  width: "100%",
+  textAlign: "center",
+  padding: "20px",
+  color: "black",
+  // Additional styles for better readability on smaller screens
+};
+
 
   const imageStyles = {
     // width: '100%', // Adjust image width according to your design
@@ -190,7 +199,8 @@ const Navbar = () => {
             <>
               <IconButton
                 color="inherit"
-                style={{ backgroundColor: "#313233" }}
+                // style={{ backgroundColor: "#313233" }}
+                sx={{ display: { sm: 'none', md: 'flex' } }}
                 onClick={handleDrawerToggle}
               >
                 <MenuIcon />
@@ -200,9 +210,9 @@ const Navbar = () => {
                 open={drawerOpen}
                 onClose={handleDrawerToggle}
                 sx={{
-                  width: "250px", // Set the width as per your requirement
+                  width: "100%", // Set the width as per your requirement
                   "& .MuiDrawer-paper": {
-                    width: "200px", // Set the width for the drawer paper content
+                    width: "100%", // Set the width for the drawer paper content
                     boxSizing: "border-box",
                     display: "flex", // Use flexbox
                     flexDirection: "column",
@@ -264,7 +274,7 @@ const Navbar = () => {
               </Drawer>
             </>
           ) : (
-            <div style={{ display: "flex", gap: "30px", color: "#003E70" }}>
+            <div style={{ display: "flex", gap: "30px", color: "#003E70",marginLeft : "auto",marginRight : "30px" }}>
               <Button
                 color="inherit"
                 onClick={() =>
