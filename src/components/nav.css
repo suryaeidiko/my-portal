@@ -3,7 +3,7 @@
     border: none;
     display: block;
     position: absolute;
-    top: 70%; /* Adjust the percentage as needed */
+    top: 60%; /* Adjust the percentage as needed */
     left: 49%;
     transform: translateX(-50%);
     padding: 0.7em 2.4em;
@@ -12,7 +12,7 @@
     cursor: pointer;
     user-select: none;
     overflow: hidden;
-    color: #003e70;
+    color: #070707;
     z-index: 1;
     font-family: inherit;
     font-weight: 500;
@@ -26,7 +26,7 @@
     height: 100%;
     background: transparent;
     z-index: -1;
-    border: 4px solid #003e70;
+    border: 4px solid #070707;
   }
   
   .btn-new span::before {
@@ -45,7 +45,7 @@
   .btn-new:hover span::before {
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 100%;
-    background: #003e70;
+    background: #070707;
   }
   
   .btn-new:hover {
@@ -53,7 +53,7 @@
   }
   
   .btn-new:active span::before {
-    background: #2751cd;
+    background: #070707;
   }
   
   /* Media query for mobile devices */

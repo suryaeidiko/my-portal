@@ -101,7 +101,7 @@ const Navbar = () => {
   };
 
   const section1StylesHome = {
-    height: "130vh",
+    height: "100vh",
     backgroundColor: "#f0f0f0",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -110,12 +110,12 @@ const Navbar = () => {
     justifyContent: "center",
     backgroundImage:
       "url(https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-      paddingTop: "64px",
+    paddingTop: "64px",
     marginTop: "-64px", // Adjusted margin to remove the blank space
   };
 
   const section1StylesAbout = {
-    height: "150vh",
+    height: "130vh",
     backgroundColor: "#f0f0f0",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -125,7 +125,7 @@ const Navbar = () => {
     backgroundImage:
       "url(https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
     // paddingTop: "10px",
-    marginTop: "-200px", // Adjusted margin to remove the blank space
+    // marginTop: "-200px", // Adjusted margin to remove the blank space
   };
 
   const section1StylesContact = {
@@ -139,17 +139,16 @@ const Navbar = () => {
     backgroundImage:
       "url(https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
     // paddingTop: "10px",
-    
+
     marginTop: "-200px", // Adjusted margin to remove the blank space
-    
   };
 
   const contentStyles = {
-    marginTop: "-20rem",
+    marginTop: "-15rem",
     width: "100%",
     textAlign: "center",
     padding: "20px",
-    color: "#003E70", // Adding text color for better visibility against the background image
+    color: "black", // Adding text color for better visibility against the background image
   };
 
   const imageStyles = {
@@ -179,7 +178,7 @@ const Navbar = () => {
               marginLeft: "30px",
               marginRight: "30px",
               fontStyle: "oblique",
-              color: "#003E70",
+              color: "#070707 ",
               fontSize: "30px",
             }}
           >
@@ -191,7 +190,7 @@ const Navbar = () => {
             <>
               <IconButton
                 color="inherit"
-                style={{ backgroundColor: "#003e70" }}
+                style={{ backgroundColor: "#313233" }}
                 onClick={handleDrawerToggle}
               >
                 <MenuIcon />
@@ -201,21 +200,21 @@ const Navbar = () => {
                 open={drawerOpen}
                 onClose={handleDrawerToggle}
                 sx={{
-                   width: "250px", // Set the width as per your requirement
-                   "& .MuiDrawer-paper": {
-                     width: "200px", // Set the width for the drawer paper content
-                     boxSizing: "border-box",
+                  width: "250px", // Set the width as per your requirement
+                  "& .MuiDrawer-paper": {
+                    width: "200px", // Set the width for the drawer paper content
+                    boxSizing: "border-box",
                     display: "flex", // Use flexbox
-                    flexDirection : "column",
+                    flexDirection: "column",
                     // flexDirection: "column", // Arrange items vertically
-                  //   justifyContent: "center", // Center items vertically
+                    //   justifyContent: "center", // Center items vertically
                     // alignItems: "center", // Center items horizontally
-                     backgroundColor: "#003E70",
-                     color: "#fff",
-                   },
+                    backgroundColor: "#313233",
+                    color: "#fff",
+                  },
                 }}
               >
-                <List style={{display : "flex", flexDirection : "column"}}>
+                <List style={{ display: "flex", flexDirection: "column" }}>
                   <ListItem
                     button
                     onClick={() =>
@@ -256,7 +255,7 @@ const Navbar = () => {
                   >
                     <ListItemText primary="TEAM" />
                   </ListItem> */}
-                
+
                   <ListItem button component={Link} to="/login">
                     <ListItemText primary="LOGIN" />
                   </ListItem>
@@ -326,7 +325,7 @@ const Navbar = () => {
               >
                 TEAM
               </Button> */}
-              
+
               <Button component={Link} to="/login" color="inherit">
                 LOGIN
               </Button>
@@ -343,10 +342,7 @@ const Navbar = () => {
             <Typography variant="h3" gutterBottom>
               HI, WELCOME TO OUR PLACE!
             </Typography>
-            <Typography
-              variant="body1"
-              style={{ fontStyle: "italic" }}
-            >
+            <Typography variant="body1" style={{ fontStyle: "italic" }}>
               {content}
             </Typography>
 
@@ -362,18 +358,23 @@ const Navbar = () => {
         </div>
       </section>
       <section ref={sectionRefs.section2} style={sectionStyles}>
-      <div style={section1StylesAbout}>
-        <div>
-          <div style={{ textAlign: "center" }}>
-            <Typography
-              variant="h4"
-              gutterBottom
-              style={{textAlign: "center",fontStyle: "italic", color: "#333" }}
-            >
-              ABOUT
-            </Typography>
-            <About />
-            {/* <Typography
+        <div style={section1StylesAbout}>
+          <div style={contentStyles}>
+          <div>
+            <div style={{ textAlign: "center" }}>
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  textAlign: "center",
+                  fontStyle: "italic",
+                  color: "#333",
+                }}
+              >
+                ABOUT
+              </Typography>
+              <About />
+              {/* <Typography
               variant="body1"
               style={{ fontStyle: "italic", color: "#333" }}
             >
@@ -382,17 +383,18 @@ const Navbar = () => {
               enterprise software, we build solutions that align with your goals
               and give your business a competitive edge.
             </Typography> */}
-            {/* <Services /> */}
+              {/* <Services /> */}
+            </div>
           </div>
-        </div>
+          </div>
         </div>
       </section>
       <section ref={sectionRefs.section3} style={sectionStyles}>
-      <div style={section1StylesContact}>
-        <div style={{ height: "100vh" }}>
-          {/* <Typography variant="h3" style={{ margin: "20px", textAlign: "center",fontStyle: "italic", color: "#333" }}>CONTACT</Typography> */}
-          <Contact />
-        </div>
+        <div style={section1StylesContact}>
+          <div style={{ height: "100vh" }}>
+            {/* <Typography variant="h3" style={{ margin: "20px", textAlign: "center",fontStyle: "italic", color: "#333" }}>CONTACT</Typography> */}
+            <Contact />
+          </div>
         </div>
       </section>
       <section ref={sectionRefs.section4} style={sectionStyles}>
