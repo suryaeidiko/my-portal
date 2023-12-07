@@ -114,21 +114,22 @@ const Navbar = () => {
   };
 
   const section1StylesAbout = {
-    height: "130vh",
-    backgroundColor: "#f0f0f0",
+    height: "120vh",
+    // backgroundColor: "#f0f0f0",
     backgroundSize: "cover",
     backgroundPosition: "center",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     backgroundImage:
-      "url(https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-    // paddingTop: "10px",
-    // marginTop: "-200px", // Adjusted margin to remove the blank space
+      "url(https://plus.unsplash.com/premium_photo-1674729243673-0b5e871a8a24?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+      paddingTop: "5rem", // Adjusted padding for better spacing
+    // marginTop: "10px",
+      marginBottom : "-15rem"
   };
 
   const section1StylesContact = {
-    height: "140vh",
+    height: "90vh",
     backgroundColor: "#f0f0f0",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -136,19 +137,13 @@ const Navbar = () => {
     alignItems: "center",
     justifyContent: "center",
     backgroundImage:
-      "url(https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-    // paddingTop: "10px",
+      "url(https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+      // paddingTop: "5rem",
 
-    marginTop: "-200px", // Adjusted margin to remove the blank space
+    // marginTop: "-100px", // Adjusted margin to remove the blank space 
   };
 
-  // const contentStyles = {
-  //   marginTop: "-15rem",
-  //   width: "100%",
-  //   textAlign: "center",
-  //   padding: "20px",
-  //   color: "black", // Adding text color for better visibility against the background image
-  // };
+  
   // Update contentStyles for better readability on smaller screens
 const contentStyles = {
   marginTop: "-10rem", // Adjust the margin for better spacing
@@ -274,7 +269,7 @@ const contentStyles = {
               </Drawer>
             </>
           ) : (
-            <div style={{ display: "flex", gap: "30px", color: "#003E70",marginLeft : "auto",marginRight : "30px" }}>
+            <div style={{ display: "flex", gap: "30px", color: "#070707",marginLeft : "auto",marginRight : "30px" }}>
               <Button
                 color="inherit"
                 onClick={() =>
@@ -346,7 +341,7 @@ const contentStyles = {
       </AppBar>
       <Toolbar /> {/* To compensate for the fixed AppBar height */}
       {/* Sections */}
-      <section ref={sectionRefs.section1}>
+      <section ref={sectionRefs.section1} style={sectionStyles}>
         <div style={section1StylesHome}>
           <div style={contentStyles}>
             <Typography variant="h3" gutterBottom>
@@ -370,12 +365,13 @@ const contentStyles = {
       <section ref={sectionRefs.section2} style={sectionStyles}>
         <div style={section1StylesAbout}>
           <div style={contentStyles}>
-          <div>
-            <div style={{ textAlign: "center" }}>
+          <div style={{marginTop:'-10rem'}}>
+            <div style={{ textAlign: "center", height:'auto' }}>
               <Typography
                 variant="h4"
                 gutterBottom
                 style={{
+                  marginTop : "5rem",
                   textAlign: "center",
                   fontStyle: "italic",
                   color: "#333",
@@ -401,7 +397,7 @@ const contentStyles = {
       </section>
       <section ref={sectionRefs.section3} style={sectionStyles}>
         <div style={section1StylesContact}>
-          <div style={{ height: "100vh" }}>
+          <div contentStyles>
             {/* <Typography variant="h3" style={{ margin: "20px", textAlign: "center",fontStyle: "italic", color: "#333" }}>CONTACT</Typography> */}
             <Contact />
           </div>

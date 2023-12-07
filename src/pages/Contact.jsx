@@ -38,7 +38,7 @@ const Contact = () => {
         </div> */}
         <div className="container grid grid-two-cols">
           <div className="contact" style={{background : "white", padding : "2rem",borderRadius : "2rem", boxShadow: "0 4px 8px 0 rgba(2, 2, 2, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19"}}>
-            <h6 style={{ fontSize: "2rem", fontWeight: "bold",borderBottom : "2px solid #003366" }}>Contact Us</h6>
+            <h6 style={{ fontSize: "2rem", fontWeight: "bold",borderBottom : "2px solid black" }}>Contact Us</h6>
 
             <form onSubmit={handlesubmit}>
             <div className="mb-3">
@@ -85,7 +85,7 @@ const Contact = () => {
                 placeholder="message"
                 id="message"
                 cols="30"
-                rows="10"
+                rows="5"
                 required
                 autoComplete="off"
                 value={contactData.message}
