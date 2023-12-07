@@ -109,7 +109,7 @@ const Navbar = () => {
     alignItems: "center",
     justifyContent: "center",
     backgroundImage:
-      "url(https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+      "url(https://images.unsplash.com/photo-1485841890310-6a055c88698a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
     paddingTop: "64px",
     marginTop: "-64px", // Adjusted margin to remove the blank space
   };
