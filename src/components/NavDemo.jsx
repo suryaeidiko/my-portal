@@ -200,7 +200,7 @@ const contentStyles = {
               <IconButton
                 color="inherit"
                 // style={{ backgroundColor: "#313233" }}
-                sx={{ display: { sm: 'none', md: 'flex' } }}
+                sx={{ display: { sm: 'none', md: 'flex',backgroundColor: "#313233" } }}
                 onClick={handleDrawerToggle}
               >
                 <MenuIcon />
