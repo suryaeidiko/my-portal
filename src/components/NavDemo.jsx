@@ -145,7 +145,7 @@ const Navbar = () => {
   };
 
   const contentStyles = {
-    marginTop: "-10rem",
+    marginTop: "-23rem",
     width: "100%",
     textAlign: "center",
     padding: "20px",
