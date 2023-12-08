@@ -66,11 +66,14 @@
 
   }
   
-  /* .hero-image {
-    display: flex;
-    justify-content: center;
-    & img {
-      width: 45%;
-      height: auto;
+  @media screen and (max-width: 767px) {
+    /* div {
+      Add styles specific to screens with a maximum width of 768 pixels
+    } */
+  
+    h1 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
-  } */
+  
+    /* Add more styles as needed for smaller screens */
+  }
