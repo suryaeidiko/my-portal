@@ -145,7 +145,7 @@ const Navbar = () => {
 
   
   // Update contentStyles for better readability on smaller screens
-const contentStyles = {
+const contentstyles = {
   marginTop: "-10rem", // Adjust the margin for better spacing
   width: "100%",
   textAlign: "center",
@@ -343,7 +343,7 @@ const contentStyles = {
       {/* Sections */}
       <section ref={sectionRefs.section1} style={sectionStyles}>
         <div style={section1StylesHome}>
-          <div style={contentStyles}>
+          <div style={contentstyles}>
             <Typography variant="h3" gutterBottom>
               HI, WELCOME TO OUR PLACE!
             </Typography>
@@ -364,7 +364,7 @@ const contentStyles = {
       </section>
       <section ref={sectionRefs.section2} style={sectionStyles}>
         <div style={section1StylesAbout}>
-          <div style={contentStyles}>
+          <div style={contentstyles}>
           <div style={{marginTop:'-10rem'}}>
             <div style={{ textAlign: "center", height:'auto' }}>
               <Typography
@@ -397,7 +397,7 @@ const contentStyles = {
       </section>
       <section ref={sectionRefs.section3} style={sectionStyles}>
         <div style={section1StylesContact}>
-          <div contentStyles>
+          <div contentstyles>
             {/* <Typography variant="h3" style={{ margin: "20px", textAlign: "center",fontStyle: "italic", color: "#333" }}>CONTACT</Typography> */}
             <Contact />
           </div>
