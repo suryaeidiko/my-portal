@@ -69,7 +69,7 @@
   @media screen and (max-width: 767px) {
     div {
       /* Add styles specific to screens with a maximum width of 768 pixels */
-      padding-top: -2rem;
+      padding-top: 10rem;
     }
   
     h1 {
