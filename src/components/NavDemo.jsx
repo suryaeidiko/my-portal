@@ -366,7 +366,7 @@ const contentstyles = {
         <div style={section1StylesAbout}>
           <div style={contentstyles}>
           <div style={{marginTop:'-10rem'}}>
-            <div style={{ textAlign: "center", height:'auto' }}>
+            <div className="abt" style={{ textAlign: "center", height:'auto' }}>
               <Typography
                 variant="h4"
                 gutterBottom
