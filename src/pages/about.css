@@ -67,10 +67,10 @@
   }
   
   @media screen and (max-width: 767px) {
-    div {
-      /* Add styles specific to screens with a maximum width of 768 pixels */
+    /* div {
+      Add styles specific to screens with a maximum width of 768 pixels
       margin-top: -1rem;
-    }
+    } */
   
     h1 {
       font-size: 1.5rem; /* Adjust font size for smaller screens */
