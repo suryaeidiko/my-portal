@@ -362,11 +362,11 @@ const contentstyles = {
           <div style={imageStyles} />
         </div>
       </section>
-      <section ref={sectionRefs.section2} style={sectionStyles}>
+      <section className="abt" ref={sectionRefs.section2} style={sectionStyles}>
         <div style={section1StylesAbout}>
           <div style={contentstyles}>
           <div style={{marginTop:'-10rem'}}>
-            <div className="abt" style={{ textAlign: "center", height:'auto' }}>
+            <div style={{ textAlign: "center", height:'auto' }}>
               <Typography
                 variant="h4"
                 gutterBottom
